@@ -1,0 +1,53 @@
+<div class="card">
+  <div class="card-img">
+    <img src="{{ userData.avatar }}" alt="" />
+  </div>
+  <div class="card-info">
+    <!-- <form [formGroup]="formGroup" (click)="handelProfile($event)">
+      <app-disabled-input
+        [id]="'Email'"
+        [value]='"userData.email"'
+        [type]="'text'"
+        [control]="formGroup.controls.email"
+      >
+      </app-disabled-input>
+      <app-disabled-input
+        [id]="'firstName'"
+        [value]="userData.first_name"
+        [type]="'text'"
+        [control]="formGroup.controls.firstName"
+      >
+      </app-disabled-input>
+      <app-disabled-input
+        [id]="'lastName'"
+        [value]="userData.last_name"
+        [type]="'text'"
+        [control]="formGroup.controls.lastName"
+      >
+      </app-disabled-input>
+    </form> -->
+
+     <table>
+            <tbody>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td>{{userData.email}}</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>:</td>
+                    <td>{{userData.first_name}}</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>:</td>
+                    <td>{{userData.last_name}}</td>
+                </tr>
+                
+            </tbody>
+        </table>
+   
+    <button class="btn" (click)="handelProfile()">More Info</button>
+  </div>
+</div>
